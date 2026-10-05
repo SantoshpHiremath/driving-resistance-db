@@ -1,9 +1,8 @@
 """Data-cleaning pass over the driving-resistance database.
 
-Mirrors the posting's ask ("Du unterstützt bei der Verwaltung und
-Optimierung der Fahrwiderstands-Datenbank") — finds and fixes real data-
-quality problems in an existing database rather than just building on a
-clean one.
+Supports the management and optimization of the driving-resistance
+database: finds and fixes real data-quality problems in an existing
+database rather than just building on a clean one.
 
 Run standalone: python3 clean.py
 Also importable: clean.find_orphaned_measurements(conn), etc. — used by

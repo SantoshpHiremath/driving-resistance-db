@@ -1,9 +1,9 @@
 """Builds and seeds driving_resistance.db with realistic SYNTHETIC data.
 
-Not real Audi data. Deliberately injects data-quality problems (duplicate
+The data is synthetic. Deliberately injects data-quality problems (duplicate
 test runs, orphaned measurements, out-of-range values) so the cleaning
-script (clean.py) has genuine work to do — mirrors the posting's ask to
-maintain/optimize an *existing* database, not just build a clean one.
+script (clean.py) has genuine work to do, as when maintaining and
+optimizing an *existing* database rather than building a clean one.
 """
 import random
 import sqlite3

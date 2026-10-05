@@ -1,6 +1,6 @@
 """Query/reporting layer — the equivalent of what an Access report or bound
-form would surface, built here as plain SQL + Python since real Access
-isn't available in this sandbox (see README).
+form would surface, built here as plain SQL + Python on SQLite
+(see README).
 """
 import sqlite3
 from pathlib import Path
@@ -9,8 +9,8 @@ DB_PATH = Path(__file__).parent.parent / "driving_resistance.db"
 
 
 def approval_queue_summary(conn):
-    """Directly mirrors the posting's 'wöchentliche Fahrwiderstands-
-    Freigaberunde' — counts of test runs by approval status, the kind of
+    """Supports the weekly driving-resistance approval round
+    ('Freigaberunde') — counts of test runs by approval status, the kind of
     summary a moderator would pull up at the start of the weekly meeting."""
     rows = conn.execute("""
         SELECT status, COUNT(*) as cnt

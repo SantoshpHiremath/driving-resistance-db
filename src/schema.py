@@ -1,8 +1,8 @@
 """Schema definition for the driving-resistance database.
 
-Modeled on what the Audi posting describes: a database tracking driving-
-resistance ("Fahrwiderstand") measurements per vehicle variant/market, plus
-a weekly approval workflow. Built in SQLite (not MS Access) — see README.
+A database tracking driving-resistance ("Fahrwiderstand") measurements per
+vehicle variant/market, plus a weekly approval workflow. Built in SQLite
+(rather than MS Access) — see README.
 """
 
 SCHEMA_SQL = """

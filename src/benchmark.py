@@ -1,6 +1,5 @@
-"""Measures a real performance improvement from adding an index — the
-direct equivalent of the posting's 'implementierst neue Funktionen zur
-Verbesserung der Datenbank-Performance.'
+"""Measures a real performance improvement from adding an index: a
+database-performance improvement, measured live on each run.
 
 Query: look up all resistance measurements for one vehicle at a time
 (the kind of drill-down an Access form bound to a single vehicle record
